@@ -1,0 +1,11 @@
+package id.go.kebumenkab.simpus
+
+import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
+
+abstract class BaseActivity : AppCompatActivity() {
+
+    protected fun disableNightMode() {
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+    }
+}
