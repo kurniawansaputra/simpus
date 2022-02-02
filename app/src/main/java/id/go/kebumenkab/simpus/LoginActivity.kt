@@ -1,13 +1,16 @@
 package id.go.kebumenkab.simpus
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatDelegate
+import id.go.kebumenkab.simpus.databinding.ActivityLoginBinding
 
 class LoginActivity : BaseActivity() {
+
+    private lateinit var binding: ActivityLoginBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         disableNightMode()
     }
