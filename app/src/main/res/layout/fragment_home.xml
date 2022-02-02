@@ -118,8 +118,9 @@
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:paddingBottom="16dp"
-            app:layout_constraintEnd_toStartOf="@+id/containerPosyandu"
+            app:layout_constraintEnd_toStartOf="@+id/containerPosbindu"
             app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/labelHealthyService">
 
@@ -155,14 +156,13 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:paddingBottom="16dp"
-            app:layout_constraintEnd_toStartOf="@+id/containerPosbindu"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/containerImmunization"
-            app:layout_constraintTop_toTopOf="@+id/containerImmunization">
+            app:layout_constraintStart_toEndOf="@+id/containerPosbindu"
+            app:layout_constraintTop_toTopOf="@+id/containerPosbindu">
 
             <ImageView
                 android:id="@+id/ivPosyandu"
@@ -196,13 +196,14 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
             android:paddingStart="16dp"
             android:paddingEnd="16dp"
             android:paddingBottom="16dp"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/containerPosyandu"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/containerPosyandu"
-            app:layout_constraintTop_toTopOf="@+id/containerPosyandu">
+            app:layout_constraintStart_toEndOf="@+id/containerImmunization"
+            app:layout_constraintTop_toTopOf="@+id/containerImmunization">
 
             <ImageView
                 android:id="@+id/ivPosbindu"
@@ -239,7 +240,6 @@
             android:paddingEnd="16dp"
             android:paddingBottom="16dp"
             app:layout_constraintEnd_toEndOf="@+id/containerImmunization"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/containerImmunization"
             app:layout_constraintTop_toBottomOf="@+id/containerImmunization">
 
