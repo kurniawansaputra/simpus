@@ -9,4 +9,11 @@
     <string name="login">Login</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="data_patient">Data Pasien</string>
+    <string name="manage_patient">Manajemen data pasien</string>
+    <string name="health_service">Layanan Kesehatan</string>
+    <string name="immunization">Imunisasi\n</string>
+    <string name="posyandu">Posyandu\n</string>
+    <string name="posbindu">Posbindu\n</string>
+    <string name="posyandu_balita">Posyandu\nBalita</string>
 </resources>

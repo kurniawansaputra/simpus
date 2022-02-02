@@ -16,17 +16,19 @@
             android:id="@+id/imageView2"
             android:layout_width="125dp"
             android:layout_height="35dp"
+            android:contentDescription="@string/content_description"
             android:src="@drawable/ic_logo"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/labelPatient"
-            style="@style/TextView.PoppinsMedium20sp"
+            style="@style/TextView.PoppinsMedium18sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Pasien"
+            android:text="@string/data_patient"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -55,7 +57,8 @@
                     android:src="@drawable/ic_patient"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ImageContrastCheck" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
                     android:layout_width="0dp"
@@ -72,7 +75,7 @@
                         style="@style/TextView.PoppinsMedium14sp"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="Pasien"
+                        android:text="@string/data_patient"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
                         app:layout_constraintTop_toTopOf="parent" />
@@ -82,12 +85,13 @@
                         style="@style/TextView.PoppinsRegular12sp"
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:text="Kelola pasien"
+                        android:text="@string/manage_patient"
                         android:textColor="#8D92A3"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
                         app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toBottomOf="@+id/labelPatient2" />
+                        app:layout_constraintTop_toBottomOf="@+id/labelPatient2"
+                        tools:ignore="TextContrastCheck" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -97,11 +101,11 @@
 
         <TextView
             android:id="@+id/labelHealthyService"
-            style="@style/TextView.PoppinsMedium20sp"
+            style="@style/TextView.PoppinsMedium18sp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
-            android:text="Pelayanan Sehat"
+            android:text="@string/health_service"
             app:layout_constraintStart_toStartOf="@+id/cardPatient"
             app:layout_constraintTop_toBottomOf="@+id/cardPatient" />
 
@@ -125,10 +129,12 @@
                 android:layout_height="64dp"
                 android:layout_marginStart="1dp"
                 android:layout_marginEnd="1dp"
+                android:contentDescription="@string/content_description"
                 android:src="@drawable/ic_immunization"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/labelImmunization"
@@ -136,7 +142,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Imunisasi\n"
+                android:text="@string/immunization"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/ivImmunization"
                 app:layout_constraintStart_toStartOf="@+id/ivImmunization"
@@ -164,10 +170,12 @@
                 android:layout_height="64dp"
                 android:layout_marginStart="1dp"
                 android:layout_marginEnd="1dp"
+                android:contentDescription="@string/content_description"
                 android:src="@drawable/ic_posyandu"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/labelPosyandu"
@@ -175,7 +183,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Posyandu\n"
+                android:text="@string/posyandu"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/ivPosyandu"
                 app:layout_constraintStart_toStartOf="@+id/ivPosyandu"
@@ -202,10 +210,12 @@
                 android:layout_height="64dp"
                 android:layout_marginStart="1dp"
                 android:layout_marginEnd="1dp"
+                android:contentDescription="@string/content_description"
                 android:src="@drawable/ic_posbindu"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/labelPosbindu"
@@ -213,7 +223,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Posbindu\n"
+                android:text="@string/posbindu"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/ivPosbindu"
                 app:layout_constraintStart_toStartOf="@+id/ivPosbindu"
@@ -239,10 +249,12 @@
                 android:layout_height="64dp"
                 android:layout_marginStart="1dp"
                 android:layout_marginEnd="1dp"
+                android:contentDescription="@string/content_description"
                 android:src="@drawable/ic_posyandu_balita"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="ImageContrastCheck" />
 
             <TextView
                 android:id="@+id/labelPosyanduBalita"
@@ -250,7 +262,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:text="Posyandu\nBalita"
+                android:text="@string/posyandu_balita"
                 android:textAlignment="center"
                 app:layout_constraintEnd_toEndOf="@+id/ivPosyanduBalita"
                 app:layout_constraintStart_toStartOf="@+id/ivPosyanduBalita"
