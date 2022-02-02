@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragment.HomeFragment"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="23dp">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="125dp"
+            android:layout_height="35dp"
+            android:src="@drawable/ic_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/labelPatient"
+            style="@style/TextView.PoppinsMedium20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Pasien"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardPatient"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="1dp"
+            app:cardCornerRadius="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelPatient">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/ivPatient"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:contentDescription="@string/content_description"
+                    android:src="@drawable/ic_patient"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivPatient"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivPatient"
+                    app:layout_constraintTop_toTopOf="@+id/ivPatient">
+
+                    <TextView
+                        android:id="@+id/labelPatient2"
+                        style="@style/TextView.PoppinsMedium14sp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Pasien"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/labelSubPatient"
+                        style="@style/TextView.PoppinsRegular12sp"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Kelola pasien"
+                        android:textColor="#8D92A3"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/labelPatient2" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/labelHealthyService"
+            style="@style/TextView.PoppinsMedium20sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Pelayanan Sehat"
+            app:layout_constraintStart_toStartOf="@+id/cardPatient"
+            app:layout_constraintTop_toBottomOf="@+id/cardPatient" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerImmunization"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/containerPosyandu"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/labelHealthyService">
+
+            <ImageView
+                android:id="@+id/ivImmunization"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:src="@drawable/ic_immunization"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/labelImmunization"
+                style="@style/TextView.PoppinsRegular14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Imunisasi\n"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/ivImmunization"
+                app:layout_constraintStart_toStartOf="@+id/ivImmunization"
+                app:layout_constraintTop_toBottomOf="@+id/ivImmunization" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerPosyandu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintEnd_toStartOf="@+id/containerPosbindu"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/containerImmunization"
+            app:layout_constraintTop_toTopOf="@+id/containerImmunization">
+
+            <ImageView
+                android:id="@+id/ivPosyandu"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:src="@drawable/ic_posyandu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/labelPosyandu"
+                style="@style/TextView.PoppinsRegular14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Posyandu\n"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/ivPosyandu"
+                app:layout_constraintStart_toStartOf="@+id/ivPosyandu"
+                app:layout_constraintTop_toBottomOf="@+id/ivPosyandu" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerPosbindu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/containerPosyandu"
+            app:layout_constraintTop_toTopOf="@+id/containerPosyandu">
+
+            <ImageView
+                android:id="@+id/ivPosbindu"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:src="@drawable/ic_posbindu"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/labelPosbindu"
+                style="@style/TextView.PoppinsRegular14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Posbindu\n"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/ivPosbindu"
+                app:layout_constraintStart_toStartOf="@+id/ivPosbindu"
+                app:layout_constraintTop_toBottomOf="@+id/ivPosbindu" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerPosyanduBalita"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingBottom="16dp"
+            app:layout_constraintEnd_toEndOf="@+id/containerImmunization"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/containerImmunization"
+            app:layout_constraintTop_toBottomOf="@+id/containerImmunization">
+
+            <ImageView
+                android:id="@+id/ivPosyanduBalita"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_marginStart="1dp"
+                android:layout_marginEnd="1dp"
+                android:src="@drawable/ic_posyandu_balita"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/labelPosyanduBalita"
+                style="@style/TextView.PoppinsRegular14sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Posyandu\nBalita"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toEndOf="@+id/ivPosyanduBalita"
+                app:layout_constraintStart_toStartOf="@+id/ivPosyanduBalita"
+                app:layout_constraintTop_toBottomOf="@+id/ivPosyanduBalita" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

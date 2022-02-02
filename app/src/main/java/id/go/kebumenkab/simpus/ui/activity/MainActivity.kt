@@ -1,4 +1,4 @@
-package id.go.kebumenkab.simpus
+package id.go.kebumenkab.simpus.ui.activity
 
 import android.os.Bundle
 import id.go.kebumenkab.simpus.databinding.ActivityMainBinding

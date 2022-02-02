@@ -25,9 +25,33 @@
         <item name="android:color">@color/black</item>
     </style>
 
+    <style name="TextView.PoppinsMedium20sp">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
+    <style name="TextView.PoppinsMedium18sp">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
+    <style name="TextView.PoppinsMedium14sp">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
     <style name="TextView.PoppinsRegular14sp">
         <item name="android:fontFamily">@font/poppins_regular</item>
         <item name="android:textSize">14sp</item>
+        <item name="android:color">@color/black</item>
+    </style>
+
+    <style name="TextView.PoppinsRegular12sp">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+        <item name="android:textSize">12sp</item>
         <item name="android:color">@color/black</item>
     </style>
 

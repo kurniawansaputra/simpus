@@ -1,4 +1,4 @@
-package id.go.kebumenkab.simpus
+package id.go.kebumenkab.simpus.ui.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
