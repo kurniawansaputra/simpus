@@ -18,6 +18,15 @@
         android:id="@+id/patientFragment"
         android:name="id.go.kebumenkab.simpus.ui.fragment.PatientFragment"
         android:label="fragment_patient"
-        tools:layout="@layout/fragment_patient" />
+        tools:layout="@layout/fragment_patient" >
+        <action
+            android:id="@+id/action_patientFragment_to_detailPatientFragment"
+            app:destination="@id/detailPatientFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPatientFragment"
+        android:name="id.go.kebumenkab.simpus.ui.fragment.DetailPatientFragment"
+        android:label="fragment_detail_patient"
+        tools:layout="@layout/fragment_detail_patient" />
 
 </navigation>

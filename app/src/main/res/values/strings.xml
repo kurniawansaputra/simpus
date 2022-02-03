@@ -16,4 +16,6 @@
     <string name="posyandu">Posyandu\n</string>
     <string name="posbindu">Posbindu\n</string>
     <string name="posyandu_balita">Posyandu\nBalita</string>
+    <string name="search">Pencarian</string>
+    <string name="search_hint">Cari</string>
 </resources>

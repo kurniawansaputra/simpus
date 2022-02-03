@@ -1,17 +1,15 @@
 package id.go.kebumenkab.simpus.ui.fragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.Navigation
-import id.go.kebumenkab.simpus.R
-import id.go.kebumenkab.simpus.databinding.FragmentHomeBinding
+import androidx.fragment.app.Fragment
+import id.go.kebumenkab.simpus.adapter.PatientAdapter.Companion.EXTRA_NAME
+import id.go.kebumenkab.simpus.databinding.FragmentDetailPatientBinding
 
-class HomeFragment : Fragment() {
-
-    private var _binding: FragmentHomeBinding? = null
+class DetailPatientFragment : Fragment() {
+    private var _binding: FragmentDetailPatientBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -22,7 +20,7 @@ class HomeFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         // Inflate the layout for this fragment
-        _binding = FragmentHomeBinding.inflate(inflater, container, false)
+        _binding = FragmentDetailPatientBinding.inflate(inflater, container, false)
 
         return binding.root
     }
@@ -33,8 +31,13 @@ class HomeFragment : Fragment() {
     }
 
     private fun setListener() {
-        binding.cardManagePatient.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_homeFragment_to_patientFragment)
+        val dataName = arguments?.getString(EXTRA_NAME)
+
+        binding.apply {
+            toolbar.title = dataName
+            toolbar.setNavigationOnClickListener {
+                activity?.onBackPressed()
+            }
         }
     }
 }
