@@ -11,27 +11,23 @@ import id.go.kebumenkab.simpus.R;
 
 public class Loading {
     private final Activity activity;
-    private ProgressDialog progressDialog;
+    private AlertDialog alertDialog;
 
     public Loading(Activity mActivity) {
         activity = mActivity;
     }
 
     public void startLoading() {
-        progressDialog = new ProgressDialog(activity);
-        progressDialog.show();
-        progressDialog.setContentView(R.layout.layout_loading);
-        progressDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-//        AlertDialog.Builder builder = new AlertDialog.Builder(activity);
-//        LayoutInflater inflater = activity.getLayoutInflater();
-//        builder.setView(inflater.inflate(R.layout.layout_loading, null));
-//        builder.setCancelable(true);
-//        alertDialog = builder.create();
-//        alertDialog.show();
-//        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        AlertDialog.Builder builder = new AlertDialog.Builder(activity);
+        LayoutInflater inflater = activity.getLayoutInflater();
+        builder.setView(inflater.inflate(R.layout.layout_loading, null));
+        builder.setCancelable(true);
+        alertDialog = builder.create();
+        alertDialog.show();
+        alertDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
     }
 
     public void dismissLoading() {
-        progressDialog.dismiss();
+        alertDialog.dismiss();
     }
 }

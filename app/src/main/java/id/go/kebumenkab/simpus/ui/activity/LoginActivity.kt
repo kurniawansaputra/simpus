@@ -1,11 +1,16 @@
 package id.go.kebumenkab.simpus.ui.activity
 
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import androidx.appcompat.app.AlertDialog
 import id.go.kebumenkab.simpus.databinding.ActivityLoginBinding
+import id.go.kebumenkab.simpus.databinding.LayoutDialogLoginFailedBinding
 import id.go.kebumenkab.simpus.utils.Loading
+
 
 class LoginActivity : BaseActivity() {
     private lateinit var idNumber: String
@@ -29,10 +34,22 @@ class LoginActivity : BaseActivity() {
             editIdNumber.addTextChangedListener(textWatcherIdNumber)
             editPassword.addTextChangedListener(textWatcherPassword)
             buttonLogin.setOnClickListener {
-                loading.startLoading()
-//                val intent = Intent(this@LoginActivity, MainActivity::class.java)
-//                startActivity(intent)
-//                finish()
+                if (idNumber == "3306092908970001" && password == "1234") {
+                    val intent = Intent(this@LoginActivity, MainActivity::class.java)
+                    startActivity(intent)
+                    finish()
+                } else {
+                    val binding: LayoutDialogLoginFailedBinding = LayoutDialogLoginFailedBinding.inflate(layoutInflater)
+                    val builder: AlertDialog.Builder = AlertDialog.Builder(layoutInflater.context)
+                    builder.setView(binding.root)
+                    val dialog: AlertDialog = builder.create()
+                    binding.buttonOk.setOnClickListener {
+                        dialog.dismiss()
+                    }
+                    dialog.setCancelable(true)
+                    dialog.show()
+                    dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+                }
             }
         }
     }
