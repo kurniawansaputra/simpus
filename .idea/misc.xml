@@ -3,6 +3,21 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/00 KS/simpus/app/src/main/res/drawable/ic_dashboard_black_24dp.xml" value="0.1" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/layout/activity_login.xml" value="0.14722222222222223" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/layout/fragment_add_patient.xml" value="0.12407407407407407" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/layout/fragment_detail_patient.xml" value="0.25416666666666665" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/layout/fragment_home.xml" value="0.25416666666666665" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/layout/fragment_notifications.xml" value="0.25416666666666665" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/layout/fragment_patient.xml" value="0.25416666666666665" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/layout/fragment_profile.xml" value="0.14722222222222223" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/layout/item_row_patient.xml" value="0.25416666666666665" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/layout/layout_dialog_login_failed.xml" value="0.25416666666666665" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/menu/bottom_nav_menu.xml" value="0.264" />
+        <entry key="..\:/00 KS/simpus/app/src/main/res/menu/patient_menu.xml" value="0.20277777777777778" />
         <entry key="..\:/00 Project/Android/Simpus/app/src/main/res/drawable/shape_rectangle_12_grey.xml" value="0.1575" />
         <entry key="..\:/00 Project/Android/Simpus/app/src/main/res/drawable/shape_rectangle_12_main.xml" value="0.1575" />
         <entry key="..\:/00 Project/Android/Simpus/app/src/main/res/layout/activity_login.xml" value="0.25" />

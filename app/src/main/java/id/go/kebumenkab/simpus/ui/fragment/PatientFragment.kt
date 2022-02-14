@@ -9,6 +9,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import id.go.kebumenkab.simpus.R
 import id.go.kebumenkab.simpus.adapter.PatientAdapter
 import id.go.kebumenkab.simpus.databinding.FragmentPatientBinding
@@ -49,6 +50,9 @@ class PatientFragment : Fragment() {
         binding.apply {
             toolbar.setNavigationOnClickListener {
                 activity?.onBackPressed()
+            }
+            fabAddPatient.setOnClickListener {
+                Navigation.findNavController(it).navigate(R.id.action_patientFragment_to_addPatientFragment)
             }
         }
     }

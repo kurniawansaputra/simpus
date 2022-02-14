@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="id.go.kebumenkab.simpus" >
+    package="id.go.kebumenkab.simpus">
 
     <application
         android:allowBackup="true"
@@ -8,7 +8,11 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Simpus" >
+        android:theme="@style/Theme.Simpus">
+        <activity
+            android:name=".ui.activity.MainActivity"
+            android:exported="false"
+            android:label="@string/title_activity_main" />
         <activity
             android:name=".ui.activity.LoginActivity"
             android:exported="true">
@@ -17,10 +21,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity
-            android:name=".ui.activity.MainActivity"
-            android:exported="false">
         </activity>
     </application>
 

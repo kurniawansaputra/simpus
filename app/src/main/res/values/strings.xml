@@ -19,4 +19,9 @@
     <string name="search">Pencarian</string>
     <string name="search_hint">Cari</string>
     <string name="please_wait">Mohon tunggu..</string>
+    <string name="title_home">home</string>
+    <string name="title_profile">profile</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
 </resources>
