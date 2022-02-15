@@ -38,6 +38,7 @@ class LoginActivity : BaseActivity() {
                     val intent = Intent(this@LoginActivity, MainActivity::class.java)
                     startActivity(intent)
                     finish()
+                    toast("Masuk")
                 } else {
                     val binding: LayoutDialogLoginFailedBinding = LayoutDialogLoginFailedBinding.inflate(layoutInflater)
                     val builder: AlertDialog.Builder = AlertDialog.Builder(layoutInflater.context)

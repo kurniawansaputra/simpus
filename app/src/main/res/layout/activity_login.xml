@@ -56,6 +56,7 @@
             app:errorTextAppearance="@style/TextView.PoppinsRegular12sp"
             app:boxStrokeWidth="0dp"
             app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="#676767"
             app:layout_constraintEnd_toEndOf="@+id/labelSubtitle"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="@+id/labelSubtitle"
@@ -83,6 +84,7 @@
             app:errorTextAppearance="@style/TextView.PoppinsRegular12sp"
             app:endIconMode="password_toggle"
             app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="#676767"
             app:layout_constraintEnd_toEndOf="@+id/containerIdNumber"
             app:layout_constraintStart_toStartOf="@+id/containerIdNumber"
             app:layout_constraintTop_toBottomOf="@+id/containerIdNumber">
