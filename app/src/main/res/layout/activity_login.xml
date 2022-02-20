@@ -47,11 +47,11 @@
             app:layout_constraintTop_toBottomOf="@+id/labelTitle" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/containerIdNumber"
+            android:id="@+id/containerEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
-            android:hint="@string/nik"
+            android:hint="@string/email"
             app:errorEnabled="true"
             app:errorTextAppearance="@style/TextView.PoppinsRegular12sp"
             app:boxStrokeWidth="0dp"
@@ -63,12 +63,11 @@
             app:layout_constraintTop_toBottomOf="@+id/labelSubtitle">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/editIdNumber"
+                android:id="@+id/editEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 style="@style/EditText"
-                android:inputType="number"
-                android:maxLength="16"
+                android:inputType="textEmailAddress"
                 tools:ignore="TextContrastCheck" />
 
         </com.google.android.material.textfield.TextInputLayout>
@@ -85,9 +84,9 @@
             app:endIconMode="password_toggle"
             app:boxStrokeWidthFocused="0dp"
             app:hintTextColor="#676767"
-            app:layout_constraintEnd_toEndOf="@+id/containerIdNumber"
-            app:layout_constraintStart_toStartOf="@+id/containerIdNumber"
-            app:layout_constraintTop_toBottomOf="@+id/containerIdNumber">
+            app:layout_constraintEnd_toEndOf="@+id/containerEmail"
+            app:layout_constraintStart_toStartOf="@+id/containerEmail"
+            app:layout_constraintTop_toBottomOf="@+id/containerEmail">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/editPassword"

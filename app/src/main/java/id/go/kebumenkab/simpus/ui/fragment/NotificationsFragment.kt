@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import id.go.kebumenkab.simpus.databinding.FragmentNotificationsBinding
+import id.go.kebumenkab.simpus.hawkstorage.HawkStorage
 
 class NotificationsFragment : Fragment() {
 
@@ -20,9 +21,14 @@ class NotificationsFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-
         _binding = FragmentNotificationsBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val user = HawkStorage.instance(context).getUser()
+        binding.textName.text = user.token
     }
 
     override fun onDestroyView() {
